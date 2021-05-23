@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>img2sheet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <style>
+        #toast-container {
+            top: auto !important;
+            right: auto !important;
+            bottom: 10%;
+            left: 7%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin-left: 5%;">
+        <h1>Image 2 Sheet</h1>
+        <h3>Convert Any Image to An Excel Spreadsheet</h2>
+            <p>Note: Big images (> 250x250) might take a long time to load</p>
+            <input type="file" id="file-input" hidden accept="image/png image/jpeg"></input>
+
+            <button class="btn waves-effect waves-light" type="submit" name="action" id="fake-file-input">Upload An
+                Image
+                <i class="material-icons right">upload</i>
+            </button>
+
+            <h5>Scale: </h5>
+            <input type="number" style="width: 25%" id="scale" value="1"></input>
+
+            <h5>Scale: </h5>
+            <input type="number" style="width: 25%" id="scale" value="1"></input>
+
+            <div class="progress" style="width: 50%; margin-top: 5%;">
+                <div class="determinate" style="width: 0%" id="progress"></div>
+            </div>
+
+            <script async type="text/javascript" src="index.js"></script>
+            <script src="main.js"></script>
+
+    </div>
+</body>
+
+</html>
+
